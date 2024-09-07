@@ -1,0 +1,144 @@
+:root{
+    --bodrad:10px;
+    --font:"Proxima Nova",sans-serif;
+    --bglayer:#1f1f1f;
+    --bg:black;
+    --asidebg:#121212;
+    --languagebtn:rgba(4, 3, 3, 0.149);
+}
+html{
+    background-color: var(--bg);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    padding-right: 120px;
+    padding-left: 30px;
+}
+.home{
+    background-color: var(--bglayer);
+    /* background-color: white; */
+    padding: 13px 6px 13px 6px;
+    border: none;
+    border-radius: 50%;
+}
+.header{
+    height: 2em;
+    width: 90em;
+    padding: 15px 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+    /* position: fixed; */
+}
+.logging{
+    gap: 10px;
+    padding-right: 30px;
+}
+.svgdec{
+    height: 25px;
+    width: 40px;
+}
+.svgdec2{
+    height: 20px;
+    width: 40px;
+}
+.signin{
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+}
+.signup{
+    color: grey;
+    padding: 15px 25px;
+    border: none;
+    background-color: var(--bg);
+    font-weight: bold;
+}
+.browse{
+    align-items: center;
+}
+.browse>p{
+    color: gray;
+    font-size: 25px;
+}
+.searchbox{
+    gap: 10px;
+}
+.searchinp{
+    border: none;
+    font-size: 16px;
+    background-color: var(--bglayer);
+    width: 28vw;
+    color: white;
+}
+.searchbar{
+    justify-content: space-between;
+    background-color: var(--bglayer);
+    padding: 10px 7px 10px 7px;
+    border-radius: 50px;
+    width: 35vw;
+    justify-self: center;
+}
+.aside{
+    height: 85vh;
+    margin: 8px;
+    padding: 20px;
+    width: 25vw;
+    background-color: var(--asidebg);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.playlist{
+    gap: 50px;
+}
+.library{
+    justify-content: space-between;
+}
+.librarytext{
+    color: grey;
+    font-weight: bold;
+}
+.yourlibrary{
+    gap: 10px;
+}
+.createplaylist{
+    align-content: space-between;
+    gap: 15px;
+    padding: 20px 30px;
+    background-color: var(--bglayer);
+    border-radius: 10px;
+}
+.playlistbtn{
+    background-color: var(--bg);
+    border: none;
+    width: 10em;
+    padding: 10px;
+    border-radius: 20px;
+}
+.contact{
+    width: 20vw;
+    gap: 40px;
+}
+.contacttext{
+    font-family: var(--font);
+    color: gray;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.language{
+    background-color: var(--languagebtn);
+    border: 1px solid gray;
+    width: 10em;
+    padding: 10px;
+    border-radius: 20px;
+}
+.contactgrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}

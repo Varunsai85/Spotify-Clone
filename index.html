@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <header class="header flex-box">
+        <img id="logo" class="invert" src="logo.svg" alt="spotify-logo">
+        <div class="flex-box aligncenter searchbox">
+            <button class="home aligncenter flex-box">
+                <img class="invertgray svgdec aligncenter" src="Home.svg" alt="home-button">
+            </button>
+            <div class="searchbar flex-box">
+                <div class="searchtext flex-box aligncenter">
+                    <img class="svgdec invertgray" src="search.svg" alt="searchicon">
+                    <input class="searchinp font" type="text" placeholder="What do you want to play?">
+                </div>
+                <div class="browse flex-box">
+                    <p>|</p>
+                    <img class="svgdec invertgray" src="view-box.svg" alt="browse">
+                </div>
+            </div>
+        </div>
+        <div class="logging flex-box">
+            <button class="signup font">Sign up</button>
+            <button class="signin font">Log in</button>
+        </div>
+    </header>
+    <aside class="aside columnflex">
+        <aside class="playlist columnflex">
+            <div class="library flex-box aligncenter">
+                <div class="yourlibrary flex-box aligncenter">
+                    <img class="invertgray svgdec" src="library.svg" alt="library">
+                    <div class="font librarytext">Your Library</div>
+                </div>
+                <div>
+                    <img class="svgdec2 invertgray" src="add.svg" alt="plus">
+                </div>
+            </div>
+
+            <div class="createplaylist columnflex">
+                <div class="whitefontbold">Create your first playlist</div>
+                <div class="whitefontlighter">It's easy we'll help you</div>
+                <button class="playlistbtn whitefontbold invert">Create playlist</button>
+            </div>
+
+            <div class="createplaylist columnflex">
+                <div class="whitefontbold">Let's find some podcats to follow</div>
+                <div class="whitefontlighter">We'll keep you updated on new episodes</div>
+                <button class="playlistbtn whitefontbold invert">Browse podcasts</button>
+            </div>
+        </aside>
+        <aside class="contact columnflex">
+            <div class="contactgrid">
+                <div class="contacttext">Legal</div>
+                <div class="contacttext">Safety & Privacy Center</div>
+                <div class="contacttext">Privacy Policy</div>
+                <div class="contacttext">About Ads</div>
+                <div class="contacttext">Accessibility</div>
+                <div class="contacttext">Cookies</div>
+            </div>
+            <button class="language whitefontbold">
+                English
+            </button>
+        </aside>
+    </aside>
+</body>
+
+</html>

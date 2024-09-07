@@ -1,0 +1,34 @@
+.invert{
+    filter: invert(1);
+}
+.flex-box{
+    display: flex;
+}
+.aligncenter{
+    align-items: center;
+}
+.font{
+    font-family:var(--font);
+    font-size: 16px;
+}
+.invertgray{
+    filter:invert(0.7)
+}
+.whitefontbold{
+    color: white;
+    font-family: var(--font);
+    font-weight: bold;
+}
+.whitefontlighter{
+    color: white;
+    font-family: var(--font);
+    font-weight: lighter;
+}
+.whitefontnormal{
+    color: white;
+    font-family: var(--font);
+}
+.columnflex{
+    display: flex;
+    flex-direction: column;
+}
