@@ -11,49 +11,51 @@
 
 <body>
     <header class="header flex-box">
-        <img id="logo" class="invert" src="logo.svg" alt="spotify-logo">
+        <div class="logoimg">
+            <img id="logo" class="invert cursorpointer" src="Assets/Images/logo.svg" alt="spotify-logo">
+        </div>
         <div class="flex-box aligncenter searchbox">
-            <button class="home aligncenter flex-box">
-                <img class="invertgray svgdec aligncenter" src="Home.svg" alt="home-button">
+            <button class="home aligncenter flex-box cursorpointer">
+                <img class="invertgray svgdec aligncenter" src="Assets/Images/Home.svg" alt="home-button">
             </button>
-            <div class="searchbar flex-box">
+            <div class="searchbar flex-box cursorpointer">
                 <div class="searchtext flex-box aligncenter">
-                    <img class="svgdec invertgray" src="search.svg" alt="searchicon">
-                    <input class="searchinp font" type="text" placeholder="What do you want to play?">
+                    <img class="svgdec invertgray" src="Assets/Images/search.svg" alt="searchicon">
+                    <input class="searchinp font cursorpointer" type="text" placeholder="What do you want to play?">
                 </div>
                 <div class="browse flex-box">
                     <p>|</p>
-                    <img class="svgdec invertgray" src="view-box.svg" alt="browse">
+                    <img class="svgdec invertgray cursorpointer" src="Assets/Images/view-box.svg" alt="browse">
                 </div>
             </div>
         </div>
         <div class="logging flex-box">
-            <button class="signup font">Sign up</button>
-            <button class="signin font">Log in</button>
+            <button class="signup font cursorpointer">Sign up</button>
+            <button class="signin font cursorpointer">Log in</button>
         </div>
     </header>
     <aside class="aside columnflex">
         <aside class="playlist columnflex">
             <div class="library flex-box aligncenter">
                 <div class="yourlibrary flex-box aligncenter">
-                    <img class="invertgray svgdec" src="library.svg" alt="library">
+                    <img class="invertgray svgdec" src="Assets/Images/library.svg" alt="library">
                     <div class="font librarytext">Your Library</div>
                 </div>
                 <div>
-                    <img class="svgdec2 invertgray" src="add.svg" alt="plus">
+                    <img class="svgdec2 invertgray" src="Assets/Images/add.svg" alt="plus">
                 </div>
             </div>
 
             <div class="createplaylist columnflex">
                 <div class="whitefontbold">Create your first playlist</div>
                 <div class="whitefontlighter">It's easy we'll help you</div>
-                <button class="playlistbtn whitefontbold invert">Create playlist</button>
+                <button class="playlistbtn whitefontbold invert cursorpointer">Create playlist</button>
             </div>
 
             <div class="createplaylist columnflex">
                 <div class="whitefontbold">Let's find some podcats to follow</div>
                 <div class="whitefontlighter">We'll keep you updated on new episodes</div>
-                <button class="playlistbtn whitefontbold invert">Browse podcasts</button>
+                <button class="playlistbtn whitefontbold invert cursorpointer">Browse podcasts</button>
             </div>
         </aside>
         <aside class="contact columnflex">
@@ -65,8 +67,9 @@
                 <div class="contacttext">Accessibility</div>
                 <div class="contacttext">Cookies</div>
             </div>
-            <button class="language whitefontbold">
-                English
+            <button class="language flex-box whitefontbold cursorpointer">
+                <img class="svgdeclang invert" src="Assets/Images/languages.svg" alt="">
+                <div class="whitefontbold">English</div>
             </button>
         </aside>
     </aside>
