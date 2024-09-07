@@ -35,6 +35,8 @@ h5{
     gap: 10px;
     padding: 10px;
     cursor: pointer;
+    border-radius: 10px;
+    position: relative;
 }
 .artistpicturesgrid{
     display: grid;
@@ -53,5 +55,26 @@ h5{
     box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
     border-radius: 10px;
     overflow: hidden;
+    position: static;
+}
+.selectplaybtn{
+    width: 50px;
+    height: 50px;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
+    background-color: rgb(4, 210, 4);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 85px;
+    right: 15px;
+    z-index: 1;
+}.selectplaybtn1{
+    bottom: 70px;
+    right: 20px;
+}
+.selectplaybtn3{
+    bottom: 55px;
+    right: 15px;
 }
 

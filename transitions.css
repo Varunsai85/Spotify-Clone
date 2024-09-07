@@ -1,0 +1,8 @@
+.artistbutton:hover{
+    background-color: var(--bglayer);
+    transition: background-color 0.1s;
+}
+.underlinetransition:hover{
+    text-decoration: underline;
+    transition: text-decoration ease-out 0s;
+}
