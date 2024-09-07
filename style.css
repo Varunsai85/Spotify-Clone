@@ -77,10 +77,10 @@ html{
     justify-self: center;
 }
 .aside{
-    height: 85vh;
+    height: 41em;
     margin: 8px;
-    padding: 20px;
-    width: 25vw;
+    padding: 20px 10px 50px 10px;
+    width: 23vw;
     background-color: var(--asidebg);
     border-radius: 10px;
     justify-content: space-between;
@@ -89,6 +89,7 @@ html{
     gap: 50px;
 }
 .library{
+    padding: 0px 10px;
     justify-content: space-between;
 }
 .librarytext{
@@ -114,7 +115,8 @@ html{
 }
 .contact{
     width: 20vw;
-    gap: 40px;
+    gap: 30px;
+    padding: 0px 20px;
 }
 .contacttext{
     font-family: var(--font);
@@ -135,4 +137,5 @@ html{
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 10px;
+    padding-right: 20px;
 }
