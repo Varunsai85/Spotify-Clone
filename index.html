@@ -7,25 +7,31 @@
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="aside.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-    <header class="header flex-box">
+    <header class="header flex-box posfix">
         <div class="logoimg">
-            <img id="logo" class="invert cursorpointer" src="Assets/Images/logo.svg" alt="spotify-logo">
+            <img draggable="false" id="logo" class="invert cursorpointer" src="Assets/Images/logo.svg"
+                alt="spotify-logo">
         </div>
         <div class="flex-box aligncenter searchbox">
             <button class="home aligncenter flex-box cursorpointer">
-                <img class="invertgray svgdec aligncenter" src="Assets/Images/Home.svg" alt="home-button">
+                <img draggable="false" class="invertgray svgdec aligncenter" src="Assets/Images/Home.svg"
+                    alt="home-button">
             </button>
             <div class="searchbar flex-box cursorpointer">
                 <div class="searchtext flex-box aligncenter">
-                    <img class="svgdec invertgray" src="Assets/Images/search.svg" alt="searchicon">
+                    <img draggable="false" class="svgdec invertgray" src="Assets/Images/search.svg" alt="searchicon">
                     <input class="searchinp font cursorpointer" type="text" placeholder="What do you want to play?">
                 </div>
                 <div class="browse flex-box">
                     <p>|</p>
-                    <img class="svgdec invertgray cursorpointer" src="Assets/Images/view-box.svg" alt="browse">
+                    <img draggable="false" class="svgdec invertgray cursorpointer" src="Assets/Images/view-box.svg"
+                        alt="browse">
                 </div>
             </div>
         </div>
@@ -34,45 +40,193 @@
             <button class="signin font cursorpointer">Log in</button>
         </div>
     </header>
-    <aside class="aside columnflex">
-        <aside class="playlist columnflex">
-            <div class="library flex-box aligncenter">
-                <div class="yourlibrary flex-box aligncenter">
-                    <img class="invertgray svgdec" src="Assets/Images/library.svg" alt="library">
-                    <div class="font librarytext">Your Library</div>
+    <main class="flex-box posabs position">
+        <aside class="aside columnflex">
+            <aside class="playlist columnflex">
+                <div class="library flex-box aligncenter">
+                    <div class="yourlibrary flex-box aligncenter">
+                        <img draggable="false" class="invertgray svgdec" src="Assets/Images/library.svg" alt="library">
+                        <div class="font librarytext">Your Library</div>
+                    </div>
+                    <div>
+                        <img draggable="false" class="svgdec2 invertgray" src="Assets/Images/add.svg" alt="plus">
+                    </div>
                 </div>
-                <div>
-                    <img class="svgdec2 invertgray" src="Assets/Images/add.svg" alt="plus">
+
+                <div class="createplaylist columnflex">
+                    <div class="whitefontbold">Create your first playlist</div>
+                    <div class="whitefontlighter">It's easy we'll help you</div>
+                    <button class="playlistbtn whitefontbold invert cursorpointer">Create playlist</button>
                 </div>
-            </div>
 
-            <div class="createplaylist columnflex">
-                <div class="whitefontbold">Create your first playlist</div>
-                <div class="whitefontlighter">It's easy we'll help you</div>
-                <button class="playlistbtn whitefontbold invert cursorpointer">Create playlist</button>
-            </div>
-
-            <div class="createplaylist columnflex">
-                <div class="whitefontbold">Let's find some podcats to follow</div>
-                <div class="whitefontlighter">We'll keep you updated on new episodes</div>
-                <button class="playlistbtn whitefontbold invert cursorpointer">Browse podcasts</button>
-            </div>
+                <div class="createplaylist columnflex">
+                    <div class="whitefontbold">Let's find some podcats to follow</div>
+                    <div class="whitefontlighter">We'll keep you updated on new episodes</div>
+                    <button class="playlistbtn whitefontbold invert cursorpointer">Browse podcasts</button>
+                </div>
+            </aside>
+            <aside class="contact columnflex">
+                <div class="contactgrid">
+                    <span class="contacttext">Legal</span>
+                    <span class="contacttext">Safety & Privacy Center</span>
+                    <span class="contacttext">Privacy Policy</span>
+                    <span class="contacttext">About Ads</span>
+                    <span class="contacttext">Accessibility</span>
+                    <span class="contacttext">Cookies</span>
+                </div>
+                <button class="language flex-box whitefontbold cursorpointer">
+                    <img draggable="false" class="svgdeclang invert" src="Assets/Images/languages.svg" alt="">
+                    <div class="whitefontbold">English</div>
+                </button>
+            </aside>
         </aside>
-        <aside class="contact columnflex">
-            <div class="contactgrid">
-                <div class="contacttext">Legal</div>
-                <div class="contacttext">Safety & Privacy Center</div>
-                <div class="contacttext">Privacy Policy</div>
-                <div class="contacttext">About Ads</div>
-                <div class="contacttext">Accessibility</div>
-                <div class="contacttext">Cookies</div>
-            </div>
-            <button class="language flex-box whitefontbold cursorpointer">
-                <img class="svgdeclang invert" src="Assets/Images/languages.svg" alt="">
-                <div class="whitefontbold">English</div>
-            </button>
-        </aside>
-    </aside>
+        <main class="main columnflex">
+            <article>
+                <article class="artists flex-box">
+                    <div class="whitefontbold artists_heading cursorpointer">Popular artists</div>
+                    <div class="grayfontbold cursorpointer">Show all</div>
+                </article>
+                <article class="artistpicturesgrid">
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit"><img draggable="false" class="artistpicture"
+                                src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="Pritam">
+                        </div>
+                        <h3 class="whitefontlighter">Pritam</h3>
+                        <h5 class="grayfontlighter">Artist</h4>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit"><img draggable="false" class="artistpicture"
+                                src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">A.R. Rahman</h4>
+                        <h5 class="grayfontlighter">Artist</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Arijit Singh</h4>
+                        <h5 class="grayfontlighter">Artist</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit"><img draggable="false" class="artistpicture"
+                                src="https://i.scdn.co/image/ab67616100005174a038d7d87f8577bbb9686bd3" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Sachin-Jigar</h4>
+                        <h5 class="grayfontlighter">Artist</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Anirudh Ravichander</h4>
+                        <h5 class="grayfontlighter">Artist</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Vishal Mishra</h4>
+                        <h5 class="grayfontlighter">Artist</h5>
+                    </div>
+                </article>
+            </article>
+            <article>
+                <article class="artists flex-box">
+                    <div class="whitefontbold artists_heading cursorpointer">Popular albums</div>
+                    <div class="grayfontbold cursorpointer">Show all</div>
+                </article>
+                <article class="artistpicturesgrid">
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture"
+                                src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="Pritam">
+                        </div>
+                        <h3 class="whitefontlighter">Aashiqui 2</h3>
+                        <h5 class="grayfontlighter">Mithoon, Ankit Tiwari, Jeet Gannguli</h4>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture"
+                                src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Making Memories</h4>
+                        <h5 class="grayfontlighter">Karan Aujla, Ikky</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Moosetape</h4>
+                        <h5 class="grayfontlighter">Sidhu Moose Wala</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture"
+                                src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Yeh Jawaani Hai Deewani</h4>
+                        <h5 class="grayfontlighter">Pritam</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">ANIMAL</h4>
+                        <h5 class="grayfontlighter">Manan Bharadwaj, Vishal Mishra, Jaani</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03" alt="Pritam">
+                        </div>
+                        <h4 class="whitefontlighter">Ek Tha Raja</h4>
+                        <h5 class="grayfontlighter">Badhshah</h5>
+                    </div>
+                </article>
+            </article>
+            <article>
+                <article class="artists flex-box">
+                    <div class="whitefontbold artists_heading cursorpointer">Popular radio</div>
+                    <div class="grayfontbold cursorpointer">Show all</div>
+                </article>
+                <article class="artistpicturesgrid">
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture"
+                                src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4YRxDV8wJFPHPTeXepOstw/en-GB" alt="Pritam">
+                        </div>
+                        <h5 class="grayfontlighter">With Neha Kakkar, Pritam, KK and more</h4>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture"
+                                src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0GF4shudTAFv8ak9eWdd4Y/en-GB" alt="Pritam">
+                        </div>
+                        <h5 class="grayfontlighter">With Mohammed Rafi, Asha Bhosle, R.D... </h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/2FKWNmZWDBZR4dE5KX4plR/en-GB" alt="Pritam">
+                        </div>
+                        <h5 class="grayfontlighter">With Garry Sandhu, Ranjit Bawa, Amrind...</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture"
+                                src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB" alt="Pritam">
+                        </div>
+                        <h5 class="grayfontlighter">With Mohit Chauhan, Ankit Tiwari, Javed A...</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/1mYsTxnqsietFxj1OgoGbG/en-GB" alt="Pritam">
+                        </div>
+                        <h5 class="grayfontlighter">With Shankar Mahadevan, Anirudh...</h5>
+                    </div>
+                    <div class="artistbutton columnflex">
+                        <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
+                                src="https://seeded-session-images.scdn.co/v2/img/540/r/artist/0oOet2f43PA68X5RxKobEy/en-GB" alt="Pritam">
+                        </div>
+                        <h5 class="grayfontlighter">With Sonu Nigam, Sunidhi Chauhan...</h5>
+                    </div>
+                </article>
+            </article>
+        </main>
+    </main>
 </body>
 
 </html>

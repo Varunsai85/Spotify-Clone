@@ -1,0 +1,64 @@
+.aside{
+    height: 42em;
+    margin: 0px 8px 8px 8px;
+    padding: 20px 10px 50px 10px;
+    width: 23vw;
+    background-color: var(--asidebg);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+.playlist{
+    gap: 50px;
+}
+.library{
+    padding: 0px 10px;
+    justify-content: space-between;
+}
+.librarytext{
+    color: grey;
+    font-weight: bold;
+}
+.yourlibrary{
+    gap: 10px;
+}
+.createplaylist{
+    align-content: space-between;
+    gap: 15px;
+    padding: 20px 30px;
+    background-color: var(--bglayer);
+    border-radius: 10px;
+}
+.playlistbtn{
+    background-color: var(--bg);
+    border: none;
+    width: 10em;
+    padding: 10px;
+    border-radius: 20px;
+}
+.contact{
+    width: 20vw;
+    gap: 30px;
+    padding: 0px 20px;
+}
+.contacttext{
+    font-family: var(--font);
+    color: gray;
+    font-weight: lighter;
+    font-size: 12px;
+    cursor: pointer;
+}
+.language{
+    background-color: var(--languagebtn);
+    border: 1px solid gray;
+    width: 8em;
+    padding: 8px;
+    border-radius: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactgrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding-right: 20px;
+}

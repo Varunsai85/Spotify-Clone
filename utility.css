@@ -28,6 +28,20 @@
     color: white;
     font-family: var(--font);
 }
+.grayfontbold{
+    color: gray;
+    font-family: var(--font);
+    font-weight: bold;
+}
+.grayfontlighter{
+    color: gray;
+    font-family: var(--font);
+    font-weight: lighter;
+}
+.grayfontnormal{
+    color: gray;
+    font-family: var(--font);
+}
 .columnflex{
     display: flex;
     flex-direction: column;
@@ -46,4 +60,10 @@
 }
 .cursorpointer{
     cursor: pointer;
+}
+.posfix{
+    position: fixed;
+}
+.posabs{
+    position: absolute;
 }
