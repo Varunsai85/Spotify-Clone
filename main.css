@@ -1,16 +1,13 @@
 .position{
     top:3.9em;
     position: fixed;
+    height: 81vh;
 }
 .main{
-    margin: 0px 8px 8px 0px;
-    height: 77vh;
-    max-height: 40.1em;
-    max-width: 64em;
+    width: 65.2em;
     padding: 50px 20px;
-    width: 64em;
     background-color: var(--asidebg);
-    gap: 50px;
+    gap: 30px;
     border-radius: 10px;
     overflow-y: scroll;
 }
@@ -57,17 +54,19 @@ h5{
     overflow: hidden;
     position: static;
 }
-.selectplaybtn{
-    visibility: hidden;
-    opacity:0;
+.playbutton{
     width: 50px;
     height: 50px;
-    box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
     background-color: rgb(4, 210, 4);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.selectplaybtn{
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
+    visibility: hidden;
+    opacity:0;
     bottom: 75px;
     right: 15px;
     z-index: 1;

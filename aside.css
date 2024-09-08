@@ -1,14 +1,14 @@
 .aside{
-    height: 81vh;
-    margin: 0px 8px 8px 8px;
-    padding: 20px 10px 50px 10px;
+    margin: 0px 8px;
+    padding: 20px 0px 50px 0px;
     width: 23vw;
     background-color: var(--asidebg);
     border-radius: 10px;
     justify-content: space-between;
+    overflow-y: scroll;
 }
 .playlist{
-    gap: 50px;
+    gap: 10px;
 }
 .library{
     padding: 0px 10px;
@@ -31,9 +31,10 @@
 .createplaylist{
     align-content: space-between;
     gap: 15px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     background-color: var(--bglayer);
     border-radius: 10px;
+    transform: scale(0.95);
 }
 .playlistbtn{
     background-color: white;

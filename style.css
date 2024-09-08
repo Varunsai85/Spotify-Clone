@@ -5,6 +5,7 @@
     --bg:black;
     --asidebg:#121212;
     --languagebtn:rgba(4, 3, 3, 0.149);
+    --searchbarborder:rgb(116, 116, 116);
 }
 html{
     background-color: var(--bg);
@@ -12,4 +13,7 @@ html{
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    overflow: scroll;
 }

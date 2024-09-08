@@ -1,0 +1,91 @@
+.playbar{
+    width:100vw;
+    max-width: 100vw;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    position: fixed;
+    bottom: 4px;
+    height: 10vh;
+    padding: 0px 25px;
+}
+.musiccontrols{
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+.controlplaybutton{
+    background-color: white;
+    transform: scale(0.63);
+}
+.controlbuttons{
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.seekbar{
+    background-color: var(--searchbarborder);
+    height: 4px;
+    width: 70%;
+    border-radius: 10px;
+}
+.seekbarinside{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    max-width:100%;
+    border-radius: 10px;
+}
+.seekbarinsideseeker{
+    height: 12px;
+    width: 12px;
+    right: -1px;
+    bottom: -3.9px;
+}
+.gridfooter{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-between;
+}
+.volume{
+    gap:10px;
+}
+.volumecontroller{
+    align-self: center;
+    width: 35%;
+    justify-self: center;
+}
+.volume-range{
+    background-color: var(--searchbarborder);
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+}
+.playpicture{
+    border-radius: 3px;
+}
+.songinfogrid{
+    gap: 15px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.songinfo{
+    gap: 5px;
+    align-self: center;
+}
+.addplaylistbtn{
+    align-self: center;
+}
+.volume-range-inside{
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.volume-range-insidedot{
+    height: 12px;
+    width: 12px;
+    right: -1px;
+    bottom: -3.9px;
+}

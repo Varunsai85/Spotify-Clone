@@ -67,3 +67,24 @@
 .posabs{
     position: absolute;
 }
+.svgdeccontrols{
+    height: 16px;
+    width: 16px;
+}
+.svgdecplaybtn{
+    height: 30px;
+    width: 30px;
+}
+.posrelative{
+    position: relative;
+}
+.svgdecvolbtn{
+    height: 14px;
+    width: 14px;
+}
+.font14{
+    font-size: 14px;
+}
+.font12{
+    font-size: 12px;
+}
