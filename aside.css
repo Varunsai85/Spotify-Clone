@@ -1,5 +1,5 @@
 .aside{
-    height: 42em;
+    height: 81vh;
     margin: 0px 8px 8px 8px;
     padding: 20px 10px 50px 10px;
     width: 23vw;
@@ -15,11 +15,18 @@
     justify-content: space-between;
 }
 .librarytext{
-    color: grey;
     font-weight: bold;
 }
 .yourlibrary{
     gap: 10px;
+}
+.plusbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
 }
 .createplaylist{
     align-content: space-between;
@@ -29,11 +36,13 @@
     border-radius: 10px;
 }
 .playlistbtn{
-    background-color: var(--bg);
+    background-color: white;
+    color: black;
     border: none;
     width: 10em;
     padding: 10px;
     border-radius: 20px;
+    font-weight: bold;
 }
 .contact{
     width: 20vw;

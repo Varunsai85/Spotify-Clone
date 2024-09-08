@@ -6,3 +6,68 @@
     text-decoration: underline;
     transition: text-decoration ease-out 0s;
 }
+
+.artistbutton:hover .selectplaybtn{
+    visibility: visible;
+    opacity: 1;
+    bottom: 85px;
+    transition:opacity ease-in-out 0.15s,bottom ease-in-out 0.2s,visibility 0.6s ease-out;
+}
+.artistbutton:hover .selectplaybtn1{
+    bottom: 70px;
+}
+
+.artistbutton:hover .selectplaybtn3{
+    bottom: 55px;
+}
+.selectplaybtn:hover{
+    transform: scale(1.05);
+    background-color: rgb(92, 216, 92);
+    transition: transform ease-in-out 0.2s,background-color ease-in-out 0.2s;
+}
+.signin:hover{
+    transform: scale(1.05);
+}
+.signup:hover{
+    transform: scale(1.05);
+    color: white;
+}
+.browselogo:hover{
+    transform: scale(1.05);
+    filter: invert(1);
+}
+.home:hover{
+    transform: scale(1.05);
+}
+.home:hover .homeicon{
+    filter:invert(1);
+}
+.yourlibrary:hover .librarytext{
+    filter: invert(1);
+}
+.yourlibrary:hover .librarylogo{
+    filter: invert(1);
+}
+.plusbtn:hover{
+    background-color: var(--bglayer);
+}
+.plusbtn:hover .plusicon{
+    filter: invert(1);
+}
+.playlistbtn:hover{
+    background-color: rgb(223, 223, 223);
+    transform: scale(1.05);
+}
+.language:hover{
+    transform: scale(1.07);
+}
+.searchbar:hover{
+    background-color: #292929;
+    border: 1px solid rgb(116, 116, 116);
+}
+.searchbar:hover .searchtext{
+    background-color: #292929;
+}
+.searchbar:hover .searchicon{
+    filter:invert(1)
+}

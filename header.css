@@ -13,7 +13,6 @@
 }
 .home{
     background-color: var(--bglayer);
-    /* background-color: white; */
     padding: 13px 6px 13px 6px;
     border: none;
     border-radius: 50%;
@@ -23,7 +22,7 @@
 }
 .searchinp{
     border: none;
-    font-size: 16px;
+    font-size: 18px;
     background-color: var(--bglayer);
     width: 28vw;
     color: white;

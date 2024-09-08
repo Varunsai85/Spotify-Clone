@@ -4,7 +4,7 @@
 }
 .main{
     margin: 0px 8px 8px 0px;
-    height: 40.1em;
+    height: 77vh;
     max-height: 40.1em;
     max-width: 64em;
     padding: 50px 20px;
@@ -58,6 +58,8 @@ h5{
     position: static;
 }
 .selectplaybtn{
+    visibility: hidden;
+    opacity:0;
     width: 50px;
     height: 50px;
     box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
@@ -66,15 +68,15 @@ h5{
     display: flex;
     justify-content: center;
     align-items: center;
-    bottom: 85px;
+    bottom: 75px;
     right: 15px;
     z-index: 1;
+    transition: bottom ease-in-out 0.2s, opacity 0.18s ease-out,visibility 0.6s ease-out;
 }.selectplaybtn1{
-    bottom: 70px;
+    bottom: 60px;
     right: 20px;
 }
 .selectplaybtn3{
-    bottom: 55px;
+    bottom: 45px;
     right: 15px;
 }
-
