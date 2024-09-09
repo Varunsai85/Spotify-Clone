@@ -4,8 +4,8 @@
     box-sizing: border-box;
     background-color: var(--bg);
     position: fixed;
-    bottom: 4px;
-    height: 10vh;
+    bottom: 15px;
+    height: 8vh;
     padding: 0px 25px;
 }
 .musiccontrols{
@@ -70,8 +70,17 @@
     width: 100%;
     border-radius: 10px;
 }
+.playpicturebtn{
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+}
 .playpicture{
     border-radius: 3px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 .songinfogrid{
     gap: 15px;

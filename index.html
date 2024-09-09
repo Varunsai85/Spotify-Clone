@@ -45,9 +45,9 @@
             <button class="signin font cursorpointer">Log in</button>
         </div>
     </header>
-    <main class="flex-box posfix position">
-        <aside class="aside columnflex">
-            <aside class="playlist columnflex">
+    <main class="flex-box position">
+        <aside class="playlist columnflex">
+            <div class="asideheader columnflex">
                 <div class="library flex-box aligncenter">
                     <div class="yourlibrary flex-box aligncenter cursorpointer">
                         <img draggable="false" class="invertgray svgdec librarylogo" src="Assets/Images/library.svg"
@@ -62,21 +62,11 @@
                 <div class="flex-box aligncenter">
                     <span class="aligncenter selection whitefontnormal">Sample Music</span>
                 </div>
-            </aside>
-            <aside class="contact columnflex">
-                <div class="contactgrid">
-                    <span class="contacttext">Legal</span>
-                    <span class="contacttext">Safety & Privacy Center</span>
-                    <span class="contacttext">Privacy Policy</span>
-                    <span class="contacttext">About Ads</span>
-                    <span class="contacttext">Accessibility</span>
-                    <span class="contacttext">Cookies</span>
-                </div>
-                <button class="language flex-box whitefontbold cursorpointer">
-                    <img draggable="false" class="svgdeclang invert" src="Assets/Images/languages.svg" alt="">
-                    <div class="whitefontbold">English</div>
-                </button>
-            </aside>
+            </div>
+            <div class="songlist">
+                <ul class="columnflex samplesongslist">
+                </ul>
+            </div>
         </aside>
         <main class="main columnflex">
             <article>
@@ -219,35 +209,35 @@
     </main>
     <footer class="playbar gridfooter aligncenter">
         <div class="songinfogrid">
-            <div class="playpicturebtn flex-box aligncenter">
+            <div class="playpicturebtn flex-box aligncenter cursorpointer">
                 <img class="playpicture" draggable="false"
-                    src="https://i.scdn.co/image/ab67616d0000485161551990618657e191d7665d" alt="infopicture">
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRcM0IsJUkLyCuleVHR_WNv6swhCVLRHciA&s" alt="infopicture">
             </div>
             <div class="songinfo columnflex">
-                <div class="songname whitefontlighter font14">Song Name</div>
-                <div class="artist grayfontlighter font12">Astist</div>
+                <div class="songname whitefontlighter font14 cursorpointer">Song Name</div>
+                <div class="artist grayfontlighter font12 cursorpointer">Artist</div>
             </div>
-            <div class="addplaylistbtn">
+            <div class="addplaylistbtn cursorpointer">
                 <img draggable="false" class="addplaylisticon svgdeccontrols invertgray" src="Assets/Images/plus.svg"
                     alt="addicon">
             </div>
         </div>
         <div class="musiccontrols columnflex">
             <div class="controlbuttons flex-box aligncenter">
-                <div class="previousbtn flex-box aligncenter">
+                <div class="previousbtn flex-box aligncenter cursorpointer">
                     <img draggable="false" class="invertgray svgdeccontrols" src="Assets/Images/previous.svg"
                         alt="previousbtn">
                 </div>
-                <div class="playbutton controlplaybutton flex-box aligncenter">
+                <div class="playbutton controlplaybutton flex-box aligncenter cursorpointer">
                     <img draggable="false" class="svgdecplaybtn" src="Assets/Images/play.svg" alt="playbtn">
                 </div>
-                <div class="nextbtn flex-box aligncenter">
+                <div class="nextbtn flex-box aligncenter cursorpointer">
                     <img draggable="false" class="svgdeccontrols invertgray" src="Assets/Images/next.svg" alt="nextbtn">
                 </div>
             </div>
             <div class="seekbarwithtime">
                 <div class="starttime grayfontlighter">-:--</div>
-                <div class="seekbar posrelative">
+                <div class="seekbar posrelative cursorpointer">
                     <div class="seekbarinside posabs">
                         <img draggable="false" class="invert posabs seekbarinsideseeker" src="Assets/Images/circle.svg"
                             alt="circle">
@@ -258,10 +248,10 @@
         </div>
         <div class="volumecontroller aligncenter">
             <div class="volume flex-box aligncenter">
-                <div class="volumebtn flex-box aligncenter">
+                <div class="volumebtn flex-box aligncenter cursorpointer">
                     <img draggable="false" class="invertgray svgdecvolbtn" src="Assets/Images/volume.svg" alt="volume">
                 </div>
-                <div class="volume-range posrelative">
+                <div class="volume-range posrelative cursorpointer">
                     <div class="volume-range-inside posabs">
                         <img draggable="false" class="invert posabs volume-range-insidedot"
                             src="Assets/Images/circle.svg" alt="circle">
@@ -271,4 +261,5 @@
         </div>
     </footer>
 </body>
+
 </html>

@@ -44,9 +44,11 @@
 }
 .yourlibrary:hover .librarytext{
     filter: invert(1);
+    transition: filter 0.2s ease-in-out;
 }
 .yourlibrary:hover .librarylogo{
     filter: invert(1);
+    transition: filter 0.2s ease-in-out;
 }
 .plusbtn:hover{
     background-color: var(--bglayer);
@@ -70,4 +72,37 @@
 }
 .searchbar:hover .searchicon{
     filter:invert(1)
+}
+.songlistitems:hover{
+    background-color: var(--bglayer);
+    transition: background-color ease-in-out 0s;
+}
+.songlistitems:hover .songlistpicture-playbtn{
+    opacity: 1;
+    transition: opacity ease-in-out 0.2s;
+}
+.songlistpicture-playbtn:active .samplesongplay-btn{
+    filter: invert(0.7);
+    transition: filter ease-in-out 0.1s;
+}
+.songname:hover{
+    text-decoration: underline;
+}
+.artist:hover{
+    text-decoration: underline;
+}
+.addplaylistbtn:hover .addplaylisticon{
+    transform: scale(1.1);
+    filter: invert(1);
+}
+.controlplaybutton:hover{
+    transform: scale(0.67);
+    filter: invert(0.1);
+}
+.controlplaybutton:active{
+    transform: scale(0.62);
+    background-color: rgb(185, 185, 185);
+}
+.songlistitems:active{
+    background-color: var(--liactivebg);
 }

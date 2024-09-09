@@ -6,6 +6,7 @@
     --asidebg:#121212;
     --languagebtn:rgba(4, 3, 3, 0.149);
     --searchbarborder:rgb(116, 116, 116);
+    --liactivebg:#181818;
 }
 html{
     background-color: var(--bg);

@@ -88,3 +88,14 @@
 .font12{
     font-size: 12px;
 }
+.sticky{
+    position: sticky;
+}
+.textoverflow-ellipsis{
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.textoverflow-ellipsis2{
+    overflow: hidden;
+}
