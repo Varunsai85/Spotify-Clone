@@ -12,13 +12,14 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="transitions.css">
     <link rel="stylesheet" href="footerplaybar.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="script.js"></script>
 </head>
 
 <body>
     <header class="header flex-box posfix">
         <div class="logoimg">
-            <img draggable="false" id="logo" class="invert cursorpointer" src="Assets/Images/logo.svg"
+            <img draggable="false" id="logo" class="invert cursorpointer spotifylogo" src="Assets/Images/logo.svg"
                 alt="spotify-logo">
         </div>
         <div class="flex-box aligncenter searchbox">
@@ -72,7 +73,7 @@
             <article>
                 <article class="artists flex-box">
                     <div class="whitefontbold artists_heading cursorpointer underlinetransition">Popular artists</div>
-                    <div class="grayfontbold cursorpointer underlinetransition">Show all</div>
+                    <div class="grayfontbold cursorpointer underlinetransition showall">Show all</div>
                 </article>
                 <article class="artistpicturesgrid">
                     <div class="artistbutton columnflex">
@@ -82,8 +83,8 @@
                         <div class="posabs selectplaybtn1 selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Pritam</h4>
-                        <h5 class="grayfontlighter">Artist</h4>
+                        <h4 class="whitefontlighter playlistfont1">Pritam</h4>
+                        <h5 class="grayfontlighter playlistfont2">Artist</h4>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit"><img draggable="false" class="artistpicture"
@@ -92,8 +93,8 @@
                         <div class="posabs selectplaybtn1 selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">A.R. Rahman</h4>
-                        <h5 class="grayfontlighter">Artist</h5>
+                        <h4 class="whitefontlighter playlistfont1">A.R. Rahman</h4>
+                        <h5 class="grayfontlighter playlistfont2">Artist</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit"><img draggable="false" class="artistpicture artistpictureresize"
@@ -102,8 +103,8 @@
                         <div class="posabs selectplaybtn1 selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Arijit Singh</h4>
-                        <h5 class="grayfontlighter">Artist</h5>
+                        <h4 class="whitefontlighter playlistfont1">Arijit Singh</h4>
+                        <h5 class="grayfontlighter playlistfont2">Artist</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit"><img draggable="false" class="artistpicture"
@@ -112,8 +113,8 @@
                         <div class="posabs selectplaybtn1 selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Sachin-Jigar</h4>
-                        <h5 class="grayfontlighter">Artist</h5>
+                        <h4 class="whitefontlighter playlistfont1">Sachin-Jigar</h4>
+                        <h5 class="grayfontlighter playlistfont2">Artist</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit"><img draggable="false" class="artistpicture artistpictureresize"
@@ -122,8 +123,8 @@
                         <div class="posabs selectplaybtn1 selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Anirudh Ravichander</h4>
-                        <h5 class="grayfontlighter">Artist</h5>
+                        <h4 class="whitefontlighter playlistfont1">Anirudh Ravichander</h4>
+                        <h5 class="grayfontlighter playlistfont2">Artist</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit"><img draggable="false" class="artistpicture artistpictureresize"
@@ -132,15 +133,15 @@
                         <div class="posabs selectplaybtn1 selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Vishal Mishra</h4>
-                        <h5 class="grayfontlighter">Artist</h5>
+                        <h4 class="whitefontlighter playlistfont1">Vishal Mishra</h4>
+                        <h5 class="grayfontlighter playlistfont2">Artist</h5>
                     </div>
                 </article>
             </article>
             <article>
                 <article class="artists flex-box">
                     <div class="whitefontbold artists_heading cursorpointer underlinetransition">Popular albums</div>
-                    <div class="grayfontbold cursorpointer underlinetransition">Show all</div>
+                    <div class="grayfontbold cursorpointer underlinetransition showall">Show all</div>
                 </article>
                 <article class="artistpicturesgrid">
                     <div class="artistbutton columnflex">
@@ -150,8 +151,8 @@
                         <div class="posabs selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Aashiqui 2</h4>
-                        <h5 class="grayfontlighter">Mithoon, Ankit Tiwari, Jeet Gannguli</h4>
+                        <h4 class="whitefontlighter playlistfont1">Aashiqui 2</h4>
+                        <h5 class="grayfontlighter playlistfont2">Mithoon, Ankit Tiwari, Jeet Gannguli</h4>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit2"><img draggable="false" class="artistpicture"
@@ -160,8 +161,8 @@
                         <div class="posabs selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Making Memories</h4>
-                        <h5 class="grayfontlighter">Karan Aujla, Ikky</h5>
+                        <h4 class="whitefontlighter playlistfont1">Making Memories</h4>
+                        <h5 class="grayfontlighter playlistfont2">Karan Aujla, Ikky</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
@@ -170,8 +171,8 @@
                         <div class="posabs selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Moosetape</h4>
-                        <h5 class="grayfontlighter">Sidhu Moose Wala</h5>
+                        <h4 class="whitefontlighter playlistfont1">Moosetape</h4>
+                        <h5 class="grayfontlighter playlistfont2">Sidhu Moose Wala</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit2"><img draggable="false" class="artistpicture"
@@ -180,8 +181,8 @@
                         <div class="posabs selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Yeh Jawaani Hai Deewani</h4>
-                        <h5 class="grayfontlighter">Pritam</h5>
+                        <h4 class="whitefontlighter playlistfont1">Yeh Jawaani Hai Deewani</h4>
+                        <h5 class="grayfontlighter playlistfont2">Pritam</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
@@ -190,8 +191,8 @@
                         <div class="posabs selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">ANIMAL</h4>
-                        <h5 class="grayfontlighter">Manan Bharadwaj, Vishal Mishra, Jaani</h5>
+                        <h4 class="whitefontlighter playlistfont1">ANIMAL</h4>
+                        <h5 class="grayfontlighter playlistfont2">Manan Bharadwaj, Vishal Mishra, Jaani</h5>
                     </div>
                     <div class="artistbutton columnflex">
                         <div class="object-fit2"><img draggable="false" class="artistpicture artistpictureresize"
@@ -200,8 +201,8 @@
                         <div class="posabs selectplaybtn playbutton">
                             <img class="svgdec" src="Assets/Images/play.svg" alt="">
                         </div>
-                        <h4 class="whitefontlighter">Ek Tha Raja</h4>
-                        <h5 class="grayfontlighter">Badhshah</h5>
+                        <h4 class="whitefontlighter playlistfont1">Ek Tha Raja</h4>
+                        <h5 class="grayfontlighter playlistfont2">Badhshah</h5>
                     </div>
                 </article>
             </article>
@@ -236,14 +237,14 @@
                 </div>
             </div>
             <div class="seekbarwithtime">
-                <div class="starttime grayfontlighter">-:--</div>
+                <div class="starttime grayfontlighter font14">-:--</div>
                 <div class="seekbar posrelative cursorpointer">
                     <div class="seekbarinside posabs">
                         <img draggable="false" class="invert posabs seekbarinsideseeker" src="Assets/Images/circle.svg"
                             alt="circle">
                     </div>
                 </div>
-                <div class="endtime grayfontlighter">-:--</div>
+                <div class="endtime grayfontlighter font14">-:--</div>
             </div>
         </div>
         <div class="volumecontroller aligncenter">
@@ -253,7 +254,7 @@
                 </div>
                 <div class="volume-range posrelative cursorpointer">
                     <div class="volume-range-inside posabs">
-                        <img draggable="false" class="invert posabs volume-range-insidedot"
+                        <img draggable="false" class="invert posabs seekbarinsideseeker"
                             src="Assets/Images/circle.svg" alt="circle">
                     </div>
                 </div>

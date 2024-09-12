@@ -22,7 +22,7 @@
 .whitefontlighter{
     color: white;
     font-family: var(--font);
-    font-weight: lighter;
+    font-weight:300;
 }
 .whitefontnormal{
     color: white;
@@ -36,7 +36,7 @@
 .grayfontlighter{
     color: gray;
     font-family: var(--font);
-    font-weight: lighter;
+    font-weight:300;
 }
 .grayfontnormal{
     color: gray;

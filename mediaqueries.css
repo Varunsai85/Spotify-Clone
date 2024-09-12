@@ -1,0 +1,427 @@
+@media (min-width:1536px) {
+    .main{
+        width: 74.5vw;
+    }
+    .spotifylogo{
+        height: 45px;
+        width: 45px;
+    }
+    .searchbox{
+        transform: scale(1.3);
+    }
+    .logging{
+        transform: scale(1.3);
+    }
+    .position{
+        top:5.9em;
+    }
+    .header{
+        width: 99.6vw;
+        height: 4em;
+    }
+    .object-fit, .object-fit2 {
+        width: 290px;
+        height: 290px;
+    }
+    .playlistfont1{
+        font-size: 20px;
+        text-overflow: ellipsis;
+    }
+    .playlistfont2{
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .selectplaybtn{
+        transform: scale(1.6);
+        bottom: 60px;
+        right: 45px;
+    }
+    .selectplaybtn1{
+        bottom: 60px;
+        right: 50px;
+    }
+    .artistbutton:hover .selectplaybtn{
+        visibility: visible;
+        opacity: 1;
+        bottom: 110px;
+        transition:opacity ease-in-out 0.15s,bottom ease-in-out 0.2s,visibility 0.6s ease-out;
+    }
+    .artistbutton:hover .selectplaybtn1{
+        bottom: 100px;
+    }
+    .playpicturebtn{
+        width: 90px;
+        height: 90px;
+    }
+    .playbar{
+        height: 10vh;
+        padding: 9px 25px 0px 25px
+    }
+    .songname{
+        font-size: 24px;
+    }
+    .svgdeccontrols {
+        height: 25px;
+        width: 25px;
+    }
+    .songinfogrid{
+        gap:0;
+    }
+    .artist{
+        font-size: 20px;
+    }
+    .controlbuttons{
+        transform: scale(1.5);
+    }
+    .seekbar{
+        height:6px;
+    }
+    .seekbarinsideseeker {
+        height: 19px;
+        width: 23px;
+        right: -3px;
+        bottom: -5.9px;
+    }
+    .font14 {
+        font-size: 20px;
+    }
+    .svgdecvolbtn {
+        height: 25px;
+        width: 25px;
+    }
+    .volume-range{
+        height: 6px;
+    }
+    .librarylogo{
+        height: 35px;
+    }
+    .librarytext{
+        font-size: 20px;
+    }
+    .selection{
+        font-size: 15px;
+    }
+    .songlistpicture, .songlistpicture-playbtn{
+        height: 70px;
+        width: 70px;
+    }
+    .songlistitems{
+        grid-template-columns: 70px 1fr;
+    }
+    .samplesongname{
+        font-size: 20px;
+    }
+    .samplesongartist{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:1024px) {
+    .main{
+        width: 71vw;
+        padding: 15px 20px;
+    }
+    .spotifylogo{
+        height: 15px;
+        width: 15px;
+    }
+    .searchbar{
+        width: 55vw;
+    }
+    .searchbox{
+        transform: scale(0.5);
+    }
+    .logging{
+        transform: scale(0.5);
+    }
+    .position{
+        top:2em;
+    }
+    .header{
+        width: 106.6vw;
+        height: 0.2em;
+    }
+    .playlist{
+        padding: 0px 0px;
+        gap: 0px;
+    }
+    .asideheader {
+        gap: 0px;
+    }
+    .yourlibrary{
+        gap: 0px;
+    }
+    .plusbtn{
+        transform: scale(0.6);
+    }
+    .librarylogo{
+        height: 20px;
+    }
+    .librarytext{
+        font-size: 12px;
+    }
+    .selection{
+        font-size: 7px;
+        padding: 6px 8px;
+    }
+    .songlistpicture, .songlistpicture-playbtn{
+        height: 45px;
+        width: 45px;
+    }
+    .songlistitems{
+        grid-template-columns: 45px 1fr;
+    }
+    .samplesongname{
+        font-size: 12px;
+    }
+    .samplesongartist{
+        font-size: 10px;
+    }
+    .artists_heading {
+        font-size: 18px;
+    }
+    .showall{
+        font-size: 8px;
+    }
+    .object-fit, .object-fit2 {
+        width: 100px;
+        height: 100px;
+    }
+    .playlistfont1{
+        font-size: 12px;
+    }
+    .playlistfont2{
+        font-size: 7px;
+        width: 100px;
+    }
+    .selectplaybtn{
+        transform: scale(0.7);
+        bottom: 45px;
+        right: 10px;
+    }
+    .selectplaybtn1{
+        bottom: 20px;
+        right: 10px;
+    }
+    .artistbutton:hover .selectplaybtn{
+        visibility: visible;
+        opacity: 1;
+        bottom: 65px;
+        transition:opacity ease-in-out 0.15s,bottom ease-in-out 0.2s,visibility 0.6s ease-out;
+    }
+    .artistbutton:hover .selectplaybtn1{
+        bottom: 45px;
+    }
+    .playpicturebtn{
+        width: 45px;
+        height: 45px;
+    }
+    .playbar{
+        height: 10vh;
+        padding: 0px 20px;
+    }
+    .songname{
+        font-size: 13px;
+    }
+    .svgdeccontrols {
+        height: 15px;
+        width: 15px;
+    }
+    .songinfogrid{
+        gap:0;
+    }
+    .artist{
+        font-size: 10px;
+    }
+    .controlbuttons{
+        transform: scale(0.8);
+    }
+    .seekbar{
+        height:4px;
+    }
+    .seekbarinsideseeker {
+        height: 9px;
+        width: 9px;
+        right: -8px;
+        bottom: -2.8px;
+    }
+    .svgdecvolbtn {
+        height: 25px;
+        width: 25px;
+    }
+    .volume-range{
+        height: 4px;
+    }
+    .starttime,.endtime{
+        font-size: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .main{
+        width: 71vw;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    .spotifylogo{
+        height: 15px;
+        width: 15px;
+    }
+    .searchbar{
+        width: 55vw;
+    }
+    .searchbox{
+        transform: scale(0.5);
+    }
+    .logoimg {
+        padding-right: 79px;
+        padding-left: 30px;
+    }
+    .logging{
+        transform: scale(0.4);
+    }
+    .position{
+        top:2em;
+    }
+    .header{
+        width: 108.6vw;
+        height: 0.2em;
+    }
+    .playlist{
+        padding: 0px 0px;
+        gap: 0px;
+        width: 21vw;
+        margin: 0px 4px;
+    }
+    .asideheader {
+        gap: 0px;
+    }
+    .yourlibrary{
+        gap: 0px;
+    }
+    .library{
+        height: 30px;
+    }
+    .plusbtn{
+        transform: scale(0.4);
+    }
+    .librarylogo{
+        height: 15px;
+        width: 20px;
+    }
+    .librarytext{
+        font-size: 8px;
+    }
+    .selection{
+        font-size: 6px;
+        padding: 6px 8px;
+    }
+    .samplesongplay-btn{
+        height: 17px;
+        width: 17px;
+    }
+    .songlistpicture, .songlistpicture-playbtn{
+        height: 35px;
+        width: 35px;
+    }
+    .songlistitems{
+        grid-template-columns: 35px 1fr;
+    }
+    .samplesongname{
+        font-size: 10px;
+    }
+    .samplesongartist{
+        font-size: 8px;
+    }
+    .artists_heading {
+        font-size: 15px;
+    }
+    .showall{
+        font-size: 8px;
+    }
+    .object-fit, .object-fit2 {
+        width: 73px;
+        height: 73px;
+    }
+    .playlistfont1{
+        font-size: 8px;
+    }
+    .playlistfont2{
+        font-size: 7px;
+        width: 73px;
+    }
+    .artistbutton{
+        gap: 5px;
+    }
+    .selectplaybtn{
+        transform: scale(0.5);
+        bottom: 28px;
+        right: 3px;
+    }
+    .selectplaybtn1{
+        bottom: 16px;
+    }
+    .artistbutton:hover .selectplaybtn{
+        visibility: visible;
+        opacity: 1;
+        bottom: 38px;
+        transition:opacity ease-in-out 0.15s,bottom ease-in-out 0.2s,visibility 0.6s ease-out;
+    }
+    .artistbutton:hover .selectplaybtn1{
+        bottom: 26px;
+    }
+    .playpicturebtn{
+        width: 35px;
+        height: 35px;
+    }
+    .playbar{
+        height: 10vh;
+        padding: 0px 20px;
+    }
+    .songname{
+        font-size: 10px;
+    }
+    .svgdeccontrols {
+        height: 11px;
+        width: 11px;
+    }
+    .songinfogrid{
+        gap:2px;
+    }
+    .artist{
+        font-size: 8px;
+    }
+    .controlbuttons{
+        transform: scale(0.8);
+    }
+    .seekbar{
+        height:4px;
+    }
+    .seekbarwithtime{
+        height: 10px;
+    }
+    .musiccontrols{
+        transform:scal1(0.9);
+    }
+    .seekbarinsideseeker {
+        height: 9px;
+        width: 9px;
+        right: -8px;
+        bottom: -2.8px;
+    }
+    .svgdecvolbtn {
+        height: 15px;
+        width: 15px;
+    }
+    .volume{
+        width: 100px;
+    }
+    .volume-range{
+        height: 4px;
+    }
+    .starttime,.endtime{
+        font-size: 10px;
+    }
+}

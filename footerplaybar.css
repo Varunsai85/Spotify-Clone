@@ -22,15 +22,13 @@
     align-items: center;
     justify-content: center;
 }
-.starttime{
-    justify-self: end;
-}
 .seekbarwithtime{
     display: grid;
     width: 95%;
     grid-template-columns: 0.5fr 5fr 0.5fr;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    justify-items: center;
 }
 .seekbar{
     background-color: var(--searchbarborder);
@@ -41,7 +39,7 @@
 .seekbarinside{
     background-color: white;
     height: 100%;
-    width: 50%;
+    width: 0%;
     max-width:100%;
     border-radius: 10px;
 }
@@ -100,10 +98,4 @@
     width: 50%;
     max-width: 100%;
     border-radius: 10px;
-}
-.volume-range-insidedot{
-    height: 12px;
-    width: 12px;
-    right: -1px;
-    bottom: -3.9px;
 }

@@ -25,9 +25,6 @@
     border-radius: 50%;
     overflow: hidden;
 }
-h5{
-    padding-right: 5px;
-}
 .artistbutton{
     gap: 10px;
     padding: 10px;
@@ -47,12 +44,16 @@ h5{
     object-position: center center;
 }
 .object-fit2{
+    align-self: center;
     width: 150px;
     height: 150px;
     box-shadow: 0px 8px 8px rgba(0,0,0,0.3);
     border-radius: 10px;
     overflow: hidden;
     position: static;
+}
+.playlistfont2{
+    width: 150px;
 }
 .playbutton{
     width: 50px;
