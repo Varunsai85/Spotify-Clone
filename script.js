@@ -26,13 +26,13 @@ async function gettingsongs(){
     return songs;
 }
 async function main(){
-    let songs=await gettingsongs()
-    let songname=songs[0].replaceAll("%20"," ").replaceAll(".mp3","")
+    let songs=await gettingsongs();
+    let songname=songs[0].split("/").pop().replace(".mp3","").replaceAll("%20"," ");
     songpicturesArray=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzv_wHOednxprllI1TjPHsVIaw_1YPZxgaA&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjzv_wHOednxprllI1TjPHsVIaw_1YPZxgaA&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZ6w_-dFgThfUNM-KcAdzThye3j76g-nC5Q&s","https://i.scdn.co/image/ab67616d0000485161551990618657e191d7665d","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmcLn4aQYAUTPF6XwO3c3PSauFVEx2t92XaA&s","https://i.scdn.co/image/ab67616d0000b2735a30aac46fbabf9fec0bc9ba","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS63MO-I4W83zapl8-ssI6c8TP4dvSyt7lmA&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRquM2AY_lLEEX8TP3qmkEiU9OlQuF5FbYzBw&s","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaZ6w_-dFgThfUNM-KcAdzThye3j76g-nC5Q&s"]
     let songinsertion=document.querySelector(".songlist").getElementsByTagName("ul")[0]
     for (let index = 0; index < songpicturesArray.length; index++) {
         const picture = songpicturesArray[index];
-        const name=songs[index].replaceAll("%20"," ").replaceAll(".mp3","")
+        const name=songs[index].split("/").pop().replace(".mp3","").replaceAll("%20"," ");
         songinsertion.innerHTML=songinsertion.innerHTML+`<li class="songlistitems cursorpointer">
                         <div class="songlistpicture posrelative">
                             <div class="songlistpicture-playbtn posabs flex-box aligncenter">
