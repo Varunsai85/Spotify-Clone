@@ -21,7 +21,7 @@ function formatTime(seconds) {
 }
   
 async function gettingsongs(){
-    let a=await fetch("http://127.0.0.1:3000/Spotify-Clone/Music/");
+    let a=await fetch("https://spotify-clone-dusky-tau-72.vercel.app/Spotify-Clone/Music/");
     let response=await a.text();
     let div = document.createElement("div");
     div.innerHTML=response;
