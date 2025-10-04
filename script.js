@@ -1,9 +1,9 @@
 console.log("Hello");
 let currentSong=new Audio();
 const playMusic=(track,pause=false)=>{
-    currentSong.src="/Music/"+track+".mp3"
+    currentSong.src="Music/"+track+".mp3"
     if(!pause){
-        currentSong.play()
+        currentSong.play().catch(err=>console.log(err));
     }
 }
 function formatTime(seconds) {
