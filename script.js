@@ -1,9 +1,9 @@
 console.log("Hello");
 let currentSong=new Audio();
 const playMusic=(track,pause=false)=>{
-    currentSong.src="Music/"+track+".mp3"
+    currentSong.src=track;
     if(!pause){
-        currentSong.play().catch(err=>console.log(err));
+        currentSong.play().catch(err=>console.log("Playback error : ",err));
     }
 }
 function formatTime(seconds) {
@@ -21,18 +21,8 @@ function formatTime(seconds) {
 }
   
 async function gettingsongs(){
-    let a=await fetch("https://spotify-clone-eta-sooty.vercel.app/Music/");
-    let response=await a.text();
-    let div = document.createElement("div");
-    div.innerHTML=response;
-    let as=div.getElementsByTagName("a");
-    let songs=[];
-    for (let index = 0; index < as.length; index++) {
-        const element = as[index];
-        if(element.href.endsWith(".mp3")){
-            songs.push(element.href.split("/Music/")[1])
-        }
-    }
+    let a=await fetch("songs.json");
+    let songs=await a.json();
     return songs;
 }
 async function main(){
@@ -70,9 +60,9 @@ async function main(){
         document.querySelector(".seekbarinside").style.width=(percent)+"%";
         currentSong.currentTime=((currentSong.duration)*percent)/100;
     })
-    Array.from(document.querySelector(".samplesongslist").getElementsByTagName("li")).forEach(e=>{
+    Array.from(document.querySelector(".samplesongslist").getElementsByTagName("li")).forEach((e,idx)=>{
         e.querySelector(".songlistpicture").addEventListener("click",()=>{
-            playMusic(e.querySelector(".samplesongname").innerHTML);
+            playMusic(songs[idx]);
             document.querySelector(".playpicture").src=e.querySelector(".songlistpictire-picture").src
             document.querySelector(".songname").innerHTML=e.querySelector(".samplesongname").innerHTML
             document.querySelector(".artist").innerHTML=e.querySelector(".samplesongartist").innerHTML
